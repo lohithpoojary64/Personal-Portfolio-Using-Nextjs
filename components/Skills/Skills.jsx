@@ -1,19 +1,19 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import react from "../public/react.png";
-import node from "../public/node.png";
-import next from "../public/next.svg";
-import tailwind from "../public/tailwind.svg";
-import ant from "../public/antd.svg";
-import framer from "../public/framer.svg";
-import typescript from "../public/typescript.svg";
+import react from "../../public/react.png";
+import node from "../../public/node.png";
+import next from "../../public/next.svg";
+import tailwind from "../../public/tailwind.svg";
+import ant from "../../public/antd.svg";
+import framer from "../../public/framer.svg";
+import typescript from "../../public/typescript.svg";
 import { motion } from "framer-motion";
 import { Flex, Progress } from "antd";
 
 const Skills = () => {
   return (
-    <div className="w-full h-200px p-20 flex justify-center">
+    <div className="hidden w-full h-200px p-20 lg:flex justify-center">
       <motion.div
         className="flex justify-start  gap-[20px]  w-[56%] h-full rounded-3xl p-2 border border-solid border-white text-white"
         style={{

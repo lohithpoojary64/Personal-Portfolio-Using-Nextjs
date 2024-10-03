@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
-import Profile from "./Profile";
+import Profile from "../Profile";
 
 const Header = () => {
   // Generating stars for the header and navbar
@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <main className="relative h-[400px] w-full flex flex-col justify-center items-center overflow-hidden">
+    <main className="hidden relative h-[400px] w-full lg:flex flex-col justify-center items-center overflow-hidden">
       {generateDots(50)}
       <Profile/>
       <motion.h1

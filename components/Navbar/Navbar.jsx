@@ -14,7 +14,7 @@ const Navbar = () => {
     setVisible(false);
   };
   return (
-    <div className="w-[100%] h-[100px] flex justify-center items-center ">
+    <div className="hidden w-[100%] h-[100px] lg:flex justify-center items-center ">
       <div className="relative w-[50%] h-[60px] flex justify-between items-center px-7  rounded-3xl text-white border border-solid border-white mt-6">
         <h1 className="font-bold">Lohith Poojary</h1>
         <div className="w-[80%]">
