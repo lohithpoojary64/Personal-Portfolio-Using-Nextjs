@@ -3,11 +3,13 @@ import React from "react";
 import Image from "next/image";
 import react from "../../public/react.png";
 import node from "../../public/node.png";
-import next from "../../public/next.svg";
+import next from "../../public/next.png";
 import tailwind from "../../public/tailwind.svg";
 import ant from "../../public/antd.svg";
 import framer from "../../public/framer.svg";
 import typescript from "../../public/typescript.svg";
+import git from "../../public/git.png";
+import express from "../../public/express.png";
 import { motion } from "framer-motion";
 import { Flex, Progress } from "antd";
 
@@ -46,7 +48,7 @@ const Skills = () => {
             className=""
           ></Image>
         </div>
-        <div className="relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
+        <div className="relative bg-white overflow-hidden flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
           <Image
             src={next}
             alt="react-image"
@@ -85,6 +87,24 @@ const Skills = () => {
         <div className="relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
           <Image
             src={typescript}
+            alt="react-image"
+            height={30}
+            width={40}
+            className=""
+          ></Image>
+        </div>
+        <div className="relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
+          <Image
+            src={express}
+            alt="react-image"
+            height={30}
+            width={40}
+            className=""
+          ></Image>
+        </div>
+        <div className="relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
+          <Image
+            src={git}
             alt="react-image"
             height={30}
             width={40}
