@@ -47,8 +47,8 @@ const items = [
 
 const NavbarM = () => {
   return (
-    <div className="relative w-full h-[70px] p-5">
-      <div className="lg:hidden flex justify-between w-full h-full border border-solid border-white text-white rounded-lg p-1">
+    <div className="lg:hidden relative w-full h-[70px] p-5">
+      <div className=" flex justify-between w-full h-full border border-solid border-white text-white rounded-lg p-1">
         <h1 className="text-sm text-slate-300">Lohith Poojary</h1>
         <div>
           <Dropdown

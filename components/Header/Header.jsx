@@ -3,44 +3,51 @@ import React from "react";
 import { easeInOut, motion } from "framer-motion";
 import Profile from "../Profile";
 
-const Header = () => {
-  // Generating stars for the header and navbar
-  const generateDots = (count) => {
-    let dots = [];
-    for (let i = 0; i < count; i++) {
-      let size = Math.random() * 7; // Random size between 3px and 10px
-      let yaxis = Math.random() * 100; // Random position between 0% and 100%
-      let xaxis = Math.random() * 100; // Random position between 0% and 100%
-      let delay = Math.random() * 5; // Random delay for blinking
+import { useEffect, useState } from "react";
 
-      dots.push(
-        <motion.div
-          key={i}
-          className="bg-white rounded-full absolute"
-          style={{
-            width: `${size}px`,
-            height: `${size}px`,
-            top: `${yaxis}%`,
-            left: `${xaxis}%`,
-          }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut",
-            repeat: Infinity,
-            delay: delay,
-          }}
-        />
-      );
-    }
-    return dots;
-  };
+const Header = () => {
+  const [dots, setDots] = useState([]);
+
+  useEffect(() => {
+    const generateDots = (count) => {
+      let dots = [];
+      for (let i = 0; i < count; i++) {
+        let size = Math.random() * 7;
+        let yaxis = Math.random() * 100;
+        let xaxis = Math.random() * 100;
+        let delay = Math.random() * 5;
+
+        dots.push(
+          <motion.div
+            key={i}
+            className="bg-white rounded-full absolute"
+            style={{
+              width: `${size}px`,
+              height: `${size}px`,
+              top: `${yaxis}%`,
+              left: `${xaxis}%`,
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              repeat: Infinity,
+              delay: delay,
+            }}
+          />
+        );
+      }
+      return dots;
+    };
+
+    setDots(generateDots(50));
+  }, []);
 
   return (
     <main className="hidden relative h-[400px] w-full lg:flex flex-col justify-center items-center overflow-hidden">
-      {generateDots(50)}
-      <Profile/>
+      {dots}
+      <Profile />
       <motion.h1
         className="font-sans text-6xl font-bold text-white relative mt-4"
         style={{
