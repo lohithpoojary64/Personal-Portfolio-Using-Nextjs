@@ -9,6 +9,7 @@ import SkillsM from "@/components/Skills/SkillsM";
 import AboutM from "@/components/About/AboutM";
 import ProjectsM from '@/components/Project/ProjectsM'
 import React from "react";
+import Contact from "@/components/Contact/Contact";
 
 
 const page = () => {
@@ -24,6 +25,7 @@ const page = () => {
       <AboutM/>
       <Projects />
       <ProjectsM/>
+      <Contact/>
     </main>
   );
 };
