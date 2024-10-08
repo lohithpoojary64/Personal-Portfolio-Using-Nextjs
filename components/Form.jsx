@@ -1,79 +1,98 @@
-import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
-import { color } from 'framer-motion';
-const onFinish = (values) => {
-  console.log('Success:', values);
+import React from "react";
+import { Button, Checkbox, Form, Input } from "antd";
+
+const Forms = () => {
+  const onFinish = (values) => {
+    console.log("Success:", values);
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
+
+  return (
+    <div className="">
+      <Form
+        style={{ padding: "20px", color: "white" }}
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+        autoComplete="off"
+      >
+        <Form.Item
+          label={<span style={{ color: "white" }}>Name  </span>} // Custom label style
+          name="Name"
+          rules={[
+            {
+              required: true,
+              message: "Please input your username!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          label={<span style={{ color: "white" }}>Email</span>} // Custom label style
+          name="Email"
+          rules={[
+            {
+              required: true,
+              message: "Please input your password!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          label={<span style={{ color: "white" }}>Mobile</span>} // Custom label style
+          name="Mobile"
+          rules={[
+            {
+              required: true,
+              message: "Please input your username!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          label={<span style={{ color: "white" }}>Username</span>} // Custom label style
+          name="username"
+          rules={[
+            {
+              required: true,
+              message: "Please input your username!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          name="remember"
+          valuePropName="checked"
+          wrapperCol={{
+            offset: 8,
+            span: 16,
+          }}
+        >
+          <Checkbox>Remember me</Checkbox>
+        </Form.Item>
+
+        <Form.Item
+          wrapperCol={{
+            offset: 8,
+            span: 16,
+          }}
+        >
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
+  );
 };
-const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
-};
-const App = () => (
-  <Form
-    name="basic"
-    labelCol={{
-      span: 8,
-    }}
-    wrapperCol={{
-      span: 16,
-    }}
-    style={{
-      maxWidth: 600,
-    }}
-    initialValues={{
-      remember: true,
-    }}
-    onFinish={onFinish}
-    onFinishFailed={onFinishFailed}
-    autoComplete="off"
-  >
-    <Form.Item
-    style={{color:"white"}}
-      label="Username"
-      name="username"
-      rules={[
-        {
-          required: true,
-          message: 'Please input your username!',
-        },
-      ]}
-    >
-      <Input />
-    </Form.Item>
 
-    <Form.Item
-      label="Password"
-      name="password"
-      rules={[
-        {
-          required: true,
-          message: 'Please input your password!',
-        },
-      ]}
-    >
-      <Input.Password />
-    </Form.Item>
-
-    <Form.Item
-      name="remember"
-      valuePropName="checked"
-      wrapperCol={{
-        offset: 8,
-        span: 16,
-      }}
-    >
-      <Checkbox>Remember me</Checkbox>
-    </Form.Item>
-
-    <Form.Item
-      wrapperCol={{
-        offset: 8,
-        span: 16,
-      }}
-    >
-      <Button type="primary" htmlType="submit">
-        Submit
-      </Button>
-    </Form.Item>
-  </Form>
-);
-export default App;
+export default Forms;
