@@ -8,40 +8,12 @@ import { easeIn, motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="hidden lg:block h-[500px] w-full p-10 ">
+    <div className="relative lg:hidden h-[800px] w-full  ">
       <div className="h-full w-full rounded-2xl p-10 text-white">
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-xl">Production Projects</h1>
-          <div className="overflow-hidden mt-[30px] h-[550px] w-[60%] flex justify-between items-center p-5 border border-solid border-white rounded-3xl ">
-            <div className="relative h-full w-[50%]">
-              {" "}
-              <motion.div
-                whileHover={{ scale: 1.05 }} // Zoom and shadow on hover
-                transition={{ duration: 0.3 }} // Control the speed of zoom
-                className="relative h-full w-[100%] "
-              >
-                <Image
-                  src={main}
-                  alt="main-image"
-                  height={300}
-                  width={300}
-                  className="relative h-[90%] w-[100%] bg-transparent"
-                />
-
-                <motion.div className="absolute z-[-1] h-[200px] w-[200px] bg-pink-500 rounded-full blur-3xl bottom-8"></motion.div>
-                <motion.div className="absolute z-[-1] h-[300px] w-[300px] bg-purple-500 rounded-full blur-3xl bottom-3"></motion.div>
-                <motion.div className="absolute z-[-1] h-[200px] w-[200px] bg-orange-500 rounded-full blur-3xl bottom-0"></motion.div>
-
-                <Image
-                  src={mobile}
-                  alt="mobile-screen"
-                  height={900}
-                  width={900}
-                  className="h-[63%] w-[45%] absolute top-10 left-[13%]"
-                ></Image>
-              </motion.div>
-            </div>
-            <div className="w-[60%] h-full">
+          <div className="overflow-hidden mt-[30px] h-[300px] w-[100%]   border border-solid border-white rounded-3xl ">
+            <div className="w-[100%] h-full p-3 overflow-y-auto">
               <motion.span
                 initial={{
                   backgroundPosition: "0%",
@@ -55,9 +27,9 @@ const Projects = () => {
                 }}
                 className="mr-2 bg-gradient-to-r from-red-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-bold"
               >
-                MyPayLink 
+                MyPayLink
               </motion.span>
-              <div className="font-bold text-slate-400">
+              <div className="font-bold text-slate-400 text-xs">
                 <h1>
                   I contributed to the development of{" "}
                   <span className="text-white">MyPayLink</span> , a{" "}
@@ -87,36 +59,9 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden mt-[30px] h-[550px] w-[60%] flex justify-between items-center p-10 border border-solid border-white rounded-3xl ">
-            <div className="relative h-full w-[50%]">
-              {" "}
-              <motion.div
-                whileHover={{ scale: 1.05 }} // Zoom and shadow on hover
-                transition={{ duration: 0.3 }} // Control the speed of zoom
-                className="relative h-full w-[100%] "
-              >
-                <Image
-                  src={main}
-                  alt="main-image"
-                  height={300}
-                  width={300}
-                  className="relative h-[90%] w-[100%] bg-transparent"
-                />
-
-                <motion.div className="absolute z-[-1] h-[200px] w-[200px] bg-pink-500 rounded-full blur-3xl bottom-8"></motion.div>
-                <motion.div className="absolute z-[-1] h-[300px] w-[300px] bg-purple-500 rounded-full blur-3xl bottom-3"></motion.div>
-                <motion.div className="absolute z-[-1] h-[200px] w-[200px] bg-orange-500 rounded-full blur-3xl bottom-0"></motion.div>
-
-                <Image
-                  src={vitePe}
-                  alt="mobile-screen"
-                  height={1900}
-                  width={1900}
-                  className="h-[63%] w-[45%] absolute top-10 left-[13%]"
-                ></Image>
-              </motion.div>
-            </div>
-            <div className="w-[60%] h-full">
+          <div className="overflow-hidden mt-[30px] h-[300px] w-[100%]   border border-solid border-white rounded-3xl ">
+          
+            <div className="w-[100%] h-full p-3 overflow-y-auto">
               <motion.span
                 initial={{
                   backgroundPosition: "0%",
@@ -132,7 +77,7 @@ const Projects = () => {
               >
                 VitePe
               </motion.span>
-              <div className="font-bold text-slate-400">
+              <div className="font-bold text-slate-400 text-xs">
                 <h1>
                   As a contributor to VitePay, a dynamic payment application, I
                   played a key role in developing the "Add Offers" page. This
@@ -144,7 +89,6 @@ const Projects = () => {
                   with the existing system, and implementing robust
                   functionality for offer management.
                 </h1>
-                
               </div>
             </div>
           </div>

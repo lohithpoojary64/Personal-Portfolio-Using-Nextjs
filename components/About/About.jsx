@@ -8,6 +8,7 @@ const About = () => {
         title="About Me"
         bordered={false} // Remove border if you prefer a cleaner look
         style={{
+          height: 210,
           width: 300, // Adjust width as per your requirement
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Shadow for depth
           borderRadius: "8px", // Rounded corners

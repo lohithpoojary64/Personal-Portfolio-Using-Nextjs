@@ -7,6 +7,7 @@ import NavbarM from "@/components/Navbar/NavbarM";
 import HeaderM from "@/components/Header/HeaderM";
 import SkillsM from "@/components/Skills/SkillsM";
 import AboutM from "@/components/About/AboutM";
+import ProjectsM from '@/components/Project/ProjectsM'
 import React from "react";
 
 
@@ -22,6 +23,7 @@ const page = () => {
       <About />
       <AboutM/>
       <Projects />
+      <ProjectsM/>
     </main>
   );
 };
