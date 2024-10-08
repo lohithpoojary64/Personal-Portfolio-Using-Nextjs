@@ -96,9 +96,26 @@ const AboutM = () => {
                 <span className="font-bold">Tikanga Pvt Limited</span> , I
                 specialize in React.js, Next.js, and Tailwind CSS, creating
                 responsive, user-friendly web applications.
-                <br /> During my internship at Tikanga Pvt Limited, I had the
-                opportunity to work on production-level projects, gaining
-                valuable hands-on experience.
+                <br />
+              </p>
+            </div>
+          </div>
+          <div>
+            <div style={contentStyle}>
+              <p
+                style={{
+                  fontSize: "14px",
+                  color: "black",
+                  backgroundColor: "white",
+                  borderRadius: "10px",
+                  padding: "10px",
+                  width: "100%", // Ensure full width
+                  height: "100%", // Ensure full height
+                }}
+              >
+                During my internship at Tikanga Pvt Limited, I had the <br/>
+                opportunity to work on production-level projects, gaining<br/>
+                valuable hands-on experience.<br/>
               </p>
             </div>
           </div>
@@ -116,10 +133,13 @@ const AboutM = () => {
                 }}
               >
                 <span className="font-bold">Graduation : </span> Bachelors
-                Degree In Computer Science<br/>
-                <span className="font-bold">Location :</span> Udupi<br/>
+                Degree In Computer Science
+                <br />
+                <span className="font-bold">Location :</span> Udupi
+                <br />
                 <span className="font-bold">Cources : </span> Full Stack Web
-                Development (Tikanga pvt Limited)<br/>
+                Development (Tikanga pvt Limited)
+                <br />
               </p>
             </div>
           </div>
