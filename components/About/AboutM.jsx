@@ -21,9 +21,8 @@ const AboutM = () => {
   return (
     <div className="lg:hidden flex justify-center items-center">
       <div className="relative h-[200px] w-full p-2 overflow-hidden">
-        <Carousel
+        <Carousel autoplay
           dotPosition="bottom"
-          infinite={false}
           style={{ width: "100%", height: "100%", gap: "3px" }} // Ensure carousel takes full height and width
         >
           <div>
@@ -144,6 +143,9 @@ const AboutM = () => {
             </div>
           </div>
         </Carousel>
+        <div className='w-full flex justify-center items-center mt-2'>
+         <h1 className='text-white text-sm'>Swipe for next... </h1>
+        </div>
       </div>
     </div>
   );

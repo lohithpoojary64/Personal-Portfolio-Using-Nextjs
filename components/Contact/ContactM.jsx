@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className=" lg:hidden flex justify-center items-center h-[30px] w-full">
       <div className="relative flex justify-between gap-[30px] items-center h-full w-[75%] border border-solid border-white rounded-xl p-5">
-        <h1 className="text-white text-sm">Contact Me</h1>
+        <h1 className="text-white text-xs">Contact Me</h1>
         <div className="flex justify-between items-center w-[60%]">
           <Dropdown
             menu={{

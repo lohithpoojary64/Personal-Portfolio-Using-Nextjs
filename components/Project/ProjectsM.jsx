@@ -60,7 +60,6 @@ const Projects = () => {
             </div>
           </div>
           <div className="overflow-hidden mt-[30px] h-[300px] w-[100%]   border border-solid border-white rounded-3xl ">
-          
             <div className="w-[100%] h-full p-3 overflow-y-auto">
               <motion.span
                 initial={{
@@ -79,14 +78,17 @@ const Projects = () => {
               </motion.span>
               <div className="font-bold text-slate-400 text-xs">
                 <h1>
-                  As a contributor to VitePay, a dynamic payment application, I
-                  played a key role in developing the "Add Offers" page. This
+                  As a contributor to{" "}
+                  <span className="text-white">VitePay</span> , a dynamic
+                  payment application, I played a key role in developing the{" "}
+                  <span className="text-white">"Add Offers" page</span>. This
                   feature enables administrators to efficiently manage
                   promotional offers by adding new ones and removing outdated
                   ones, enhancing the overall user experience and functionality
-                  of the app. My work involved collaborating with the team to
-                  design an intuitive interface, ensuring seamless integration
-                  with the existing system, and implementing robust
+                  of the app. My work involved{" "}
+                  <span className="text-white">collaborating</span> with the
+                  team to design an intuitive interface, ensuring seamless
+                  integration with the existing system, and implementing robust
                   functionality for offer management.
                 </h1>
               </div>
