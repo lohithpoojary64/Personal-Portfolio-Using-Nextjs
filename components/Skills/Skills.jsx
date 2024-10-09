@@ -39,7 +39,7 @@ const Skills = () => {
           ></Image>
         </div>
 
-        <div className="relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
+        <div className=" relative flex justify-center  items-center h-[50px] w-[50px] border-2 border-solid  border-blue-600  text-white  rounded-full ">
           <Image
             src={node}
             alt="react-image"

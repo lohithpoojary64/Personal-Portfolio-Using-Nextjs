@@ -10,11 +10,12 @@ import AboutM from "@/components/About/AboutM";
 import ProjectsM from '@/components/Project/ProjectsM'
 import React from "react";
 import Contact from "@/components/Contact/Contact";
+import ContactM from "@/components/Contact/ContactM";
 
 
 const page = () => {
   return (
-    <main className="bg-black min-h-screen h-[400vh] w-[100%]">
+    <main className="bg-black min-h-screen h-[230vh] lg:h-[330vh] w-[100%]">
       <Navbar />
       <NavbarM />
       <Header />
@@ -26,6 +27,7 @@ const page = () => {
       <Projects />
       <ProjectsM/>
       <Contact/>
+      <ContactM/>
     </main>
   );
 };

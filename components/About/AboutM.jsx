@@ -93,7 +93,7 @@ const AboutM = () => {
                 }}
               >
                 Currently working as a front-end intern at{" "}
-                <span className="font-bold">Tikanga Pvt Limited</span> , I
+                <span className="font-bold">Tikanga Pvt Limited</span> ,<br/> I
                 specialize in React.js, Next.js, and Tailwind CSS, creating
                 responsive, user-friendly web applications.
                 <br />
@@ -113,7 +113,7 @@ const AboutM = () => {
                   height: "100%", // Ensure full height
                 }}
               >
-                During my internship at Tikanga Pvt Limited, I had the <br/>
+                During my internship at Tikanga Pvt Limited, <br/>I had the 
                 opportunity to work on production-level projects, gaining<br/>
                 valuable hands-on experience.<br/>
               </p>

@@ -8,9 +8,9 @@ import { easeIn, motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="hidden lg:block h-[45%] w-full p-10 ">
+    <div className="hidden relative lg:block h-[55%] w-full p-10 ">
       <div className="h-full w-full rounded-2xl p-10 text-white">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center h-full w-full">
           <h1 className="font-bold text-xl">Production Projects</h1>
           <div className="overflow-hidden mt-[30px] h-[550px] w-[60%] flex justify-between items-center p-5 border border-solid border-white rounded-3xl ">
             <div className="relative h-full w-[50%]">
